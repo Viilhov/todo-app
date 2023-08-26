@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import Form from "./components/Form";
+import TodoList from "./components/TodoList";
 import { useState } from "react";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         todoList={todoList}
         setTodoList={setTodoList}
       />
+      <TodoList todoList={todoList} />
     </div>
   );
 }
